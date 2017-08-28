@@ -328,7 +328,7 @@ void SPIClass::transfer(void *data, size_t count){
 		uint8_t in = _SPIInstance->RXD;
 		//write next byte
 		_SPIInstance->EVENTS_READY = 0;
-		_SPIInstance->TXD = *p;
+		_SPIInstance->TXD = out;
 		//wait for a complete trasmission
 		while (_SPIInstance->EVENTS_READY == 0)
 			;
