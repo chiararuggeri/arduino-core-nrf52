@@ -31,6 +31,7 @@
 //
 #include "avr/pgmspace.h"
 #include "avr/interrupt.h"
+#include "avr/dtostrf.h"
 
 #include "binary.h"
 #include "itoa.h"
