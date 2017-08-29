@@ -40,7 +40,7 @@ EddystoneBeacon::EddystoneBeacon(unsigned char req, unsigned char rdy, unsigned 
   _bleService("feaa"),
   _bleCharacteristic("feab", BLERead | BLEBroadcast, MAX_SERVICE_DATA_SIZE)
 {
-  this->setConnectable(false);
+ // this->setConnectable(false);
 
   this->addAttribute(this->_bleService);
   this->addAttribute(this->_bleCharacteristic);

@@ -9,7 +9,7 @@
 iBeacon::iBeacon() :
   BLEPeripheral()
 {
-  this->setConnectable(false);
+//  this->setConnectable(false);
 }
 
 void iBeacon::begin(const char* uuidString, unsigned short major, unsigned short minor, char measuredPower) {
